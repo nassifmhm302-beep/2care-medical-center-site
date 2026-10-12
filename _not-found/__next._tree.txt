@@ -1,0 +1,2 @@
+:HL["/2care-medical-center-site/_next/static/chunks/0e95_lb43c4bp.css","style"]
+0:{"tree":{"name":"","param":null,"prefetchHints":16,"slots":{"children":{"name":"/_not-found","param":null,"prefetchHints":0,"slots":{"children":{"name":"__PAGE__","param":null,"prefetchHints":0,"slots":null}}}}},"staleTime":300,"buildId":"A1VgHQA67s21-lhdp47Lo"}
