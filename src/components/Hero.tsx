@@ -1,6 +1,7 @@
 import Link from "next/link";
 import Image from "next/image";
 import { clinic } from "@/lib/clinic";
+import { assetPath } from "@/lib/assets";
 
 export function Hero() {
   return (
@@ -42,7 +43,7 @@ export function Hero() {
         <div className="animate-fade-up order-1 lg:order-2">
           <div className="relative mx-auto aspect-[4/3] w-full max-w-xl overflow-hidden rounded-[var(--radius-large)] shadow-[var(--shadow-card)]">
             <Image
-              src="/images/hero/dental-hero.jpg"
+              src={assetPath("/images/hero/dental-hero.jpg")}
               alt="طبيبة تقدم رعاية أسنان لمريضة داخل مركز 2Care"
               fill
               priority

@@ -3,6 +3,7 @@ import Link from "next/link";
 import { BeforeAfterSlider } from "@/components/BeforeAfterSlider";
 import { SectionHeading } from "@/components/SectionHeading";
 import { BookingCTA } from "@/components/BookingCTA";
+import { assetPath } from "@/lib/assets";
 
 export const metadata: Metadata = {
   title: "قبل وبعد",
@@ -38,13 +39,13 @@ export default function BeforeAfterPage() {
           <div className="mt-10 grid gap-8 md:grid-cols-2">
             <BeforeAfterSlider
               title="حالة تجميل وتبييض الأسنان"
-              before="/images/before-after/teeth-demo.jpg"
-              after="/images/services/veneers.jpg"
+              before={assetPath("/images/before-after/teeth-demo.jpg")}
+              after={assetPath("/images/services/veneers.jpg")}
             />
             <BeforeAfterSlider
               title="حالة تقويم الأسنان"
-              before="/images/services/teeth-cleaning.jpg"
-              after="/images/services/orthodontics.jpg"
+              before={assetPath("/images/services/teeth-cleaning.jpg")}
+              after={assetPath("/images/services/orthodontics.jpg")}
             />
           </div>
           <div className="mt-8 text-center">
@@ -61,13 +62,13 @@ export default function BeforeAfterPage() {
           <div className="mt-10 grid gap-8 md:grid-cols-2">
             <BeforeAfterSlider
               title="حالة حقن الشفاه"
-              before="/images/before-after/lips-demo.jpg"
-              after="/images/services/botox-filler.jpg"
+              before={assetPath("/images/before-after/lips-demo.jpg")}
+              after={assetPath("/images/services/botox-filler.jpg")}
             />
             <BeforeAfterSlider
               title="حالة تنظيف ونضارة البشرة"
-              before="/images/services/chemical-peeling.jpg"
-              after="/images/services/deep-cleansing.jpg"
+              before={assetPath("/images/services/chemical-peeling.jpg")}
+              after={assetPath("/images/services/deep-cleansing.jpg")}
             />
           </div>
           <div className="mt-8 text-center">

@@ -5,6 +5,7 @@ import Image from "next/image";
 import { usePathname } from "next/navigation";
 import { useEffect, useState } from "react";
 import { services, departmentLabels, getServicesByDepartment } from "@/lib/services";
+import { assetPath } from "@/lib/assets";
 
 const NAV_LINKS = [
   { href: "/", label: "الرئيسية" },
@@ -53,7 +54,7 @@ export function Header() {
       <div className="container-main flex h-[76px] items-center justify-between gap-4">
         <Link href="/" className="flex shrink-0 items-center gap-2 focus-ring">
           <Image
-            src="/images/brand/logo.png"
+            src={assetPath("/images/brand/logo.png")}
             alt="شعار 2Care — مجمع توكير الطبي"
             width={120}
             height={40}

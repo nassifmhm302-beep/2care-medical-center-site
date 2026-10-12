@@ -4,6 +4,7 @@ import Link from "next/link";
 import { SectionHeading } from "@/components/SectionHeading";
 import { BookingCTA } from "@/components/BookingCTA";
 import { clinic } from "@/lib/clinic";
+import { assetPath } from "@/lib/assets";
 
 export const metadata: Metadata = {
   title: "من نحن",
@@ -27,7 +28,7 @@ export default function AboutPage() {
         <div className="container-main grid items-center gap-12 lg:grid-cols-2">
           <div className="relative aspect-[4/3.2] overflow-hidden rounded-[var(--radius-large)] shadow-[var(--shadow-card)]">
             <Image
-              src="/images/about/clinic-care.jpg"
+              src={assetPath("/images/about/clinic-care.jpg")}
               alt="طبيبة تقدم رعاية طبية لمريضة داخل العيادة"
               fill
               sizes="(max-width: 1024px) 100vw, 560px"

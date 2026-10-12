@@ -10,6 +10,7 @@ import { BookingCTA } from "@/components/BookingCTA";
 import { clinic, whatsappLink } from "@/lib/clinic";
 import { departmentLabels, getServicesByDepartment } from "@/lib/services";
 import { doctors } from "@/lib/doctors";
+import { assetPath } from "@/lib/assets";
 
 export default function HomePage() {
   const dentalServices = getServicesByDepartment("dental");
@@ -25,7 +26,7 @@ export default function HomePage() {
         <div className="container-main grid items-center gap-12 lg:grid-cols-2">
           <div className="relative order-2 aspect-[4/3.2] overflow-hidden rounded-[var(--radius-large)] shadow-[var(--shadow-card)] lg:order-1">
             <Image
-              src="/images/about/clinic-reception.jpg"
+              src={assetPath("/images/about/clinic-reception.jpg")}
               alt="استقبال داخل عيادة طبية حديثة"
               fill
               sizes="(max-width: 1024px) 100vw, 560px"
@@ -179,8 +180,8 @@ export default function HomePage() {
           </div>
           <BeforeAfterSlider
             title="مقارنة قبل وبعد لعلاج الأسنان"
-            before="/images/before-after/teeth-demo.jpg"
-            after="/images/services/veneers.jpg"
+            before={assetPath("/images/before-after/teeth-demo.jpg")}
+            after={assetPath("/images/services/veneers.jpg")}
           />
         </div>
       </section>
@@ -191,8 +192,8 @@ export default function HomePage() {
           <div className="order-2 lg:order-1">
             <BeforeAfterSlider
               title="مقارنة قبل وبعد لحقن الشفاه"
-              before="/images/before-after/lips-demo.jpg"
-              after="/images/services/botox-filler.jpg"
+              before={assetPath("/images/before-after/lips-demo.jpg")}
+              after={assetPath("/images/services/botox-filler.jpg")}
             />
           </div>
           <div className="order-1 lg:order-2">

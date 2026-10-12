@@ -2,6 +2,7 @@ import Link from "next/link";
 import Image from "next/image";
 import { clinic, whatsappLink } from "@/lib/clinic";
 import { getServicesByDepartment } from "@/lib/services";
+import { assetPath } from "@/lib/assets";
 
 export function Footer() {
   const dental = getServicesByDepartment("dental").slice(0, 5);
@@ -12,7 +13,7 @@ export function Footer() {
       <div className="container-main grid gap-10 py-14 md:grid-cols-2 lg:grid-cols-4">
         <div>
           <Image
-            src="/images/brand/logo.png"
+            src={assetPath("/images/brand/logo.png")}
             alt="شعار 2Care"
             width={120}
             height={40}
